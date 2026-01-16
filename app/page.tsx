@@ -1,3 +1,5 @@
+"use client";
+
 export default function HomePage() {
   return (
     <main
@@ -28,6 +30,7 @@ export default function HomePage() {
       </p>
 
       <button
+        onClick={() => alert("Next step: Video matching coming soon 🔥")}
         style={{
           padding: "14px 28px",
           fontSize: "1rem",
@@ -38,7 +41,6 @@ export default function HomePage() {
           background: "linear-gradient(90deg, #22d3ee, #38bdf8)",
           color: "#020617",
         }}
-        onClick={() => alert("Next step: Video matching coming soon 🔥")}
       >
         Start Video Chat
       </button>
