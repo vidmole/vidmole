@@ -1,38 +1,46 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <main
       style={{
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         alignItems: "center",
+        justifyContent: "center",
         textAlign: "center",
-        padding: "40px",
+        padding: "24px",
       }}
     >
-      <h1 style={{ fontSize: "48px", marginBottom: "16px" }}>
-        🚀 Vidmole is Live
+      <h1 style={{ fontSize: "3rem", marginBottom: "12px" }}>
+        🚀 Vidmole
       </h1>
 
-      <p style={{ fontSize: "20px", maxWidth: "600px" }}>
-        Your Next.js app is running successfully on Vercel.
+      <p
+        style={{
+          fontSize: "1.2rem",
+          maxWidth: "600px",
+          opacity: 0.85,
+          marginBottom: "32px",
+        }}
+      >
+        Connect instantly with people around the world through live video.
+        No sign-up. No limits. Just real conversations.
       </p>
 
       <button
         style={{
-          marginTop: "30px",
           padding: "14px 28px",
-          fontSize: "18px",
-          borderRadius: "8px",
+          fontSize: "1rem",
+          fontWeight: 600,
+          borderRadius: "10px",
           border: "none",
           cursor: "pointer",
-          backgroundColor: "#38bdf8",
+          background: "linear-gradient(90deg, #22d3ee, #38bdf8)",
           color: "#020617",
-          fontWeight: "bold",
         }}
+        onClick={() => alert("Next step: Video matching coming soon 🔥")}
       >
-        Start Video Experience
+        Start Video Chat
       </button>
     </main>
   );
