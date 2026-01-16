@@ -1,6 +1,8 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Vidmole",
-  description: "Global video chat app",
+  description: "Vidmole – Global video interactions platform",
 };
 
 export default function RootLayout({
@@ -10,7 +12,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        style={{
+          margin: 0,
+          padding: 0,
+          fontFamily: "Arial, sans-serif",
+          backgroundColor: "#0f172a",
+          color: "#ffffff",
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
