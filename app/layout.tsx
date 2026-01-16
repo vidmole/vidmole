@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Vidmole",
-  description: "Vidmole – Global video interactions platform",
+  description: "Global random video chat experience",
 };
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
         style={{
           margin: 0,
           padding: 0,
-          fontFamily: "Arial, sans-serif",
+          fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
           backgroundColor: "#0f172a",
           color: "#ffffff",
         }}
